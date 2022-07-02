@@ -2,7 +2,7 @@ import os
 import sys
 import multiprocessing
 import math
-
+#test
 listWithPaths = "D:\\Ml-Projects\\test"
 
 def getAllFiles(path): 
