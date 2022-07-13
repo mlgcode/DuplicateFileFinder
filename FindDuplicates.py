@@ -7,7 +7,7 @@ import math
 import time
 
 start_time = time.time()
-listWithPaths = "/media/michel/Tosh FP_6"
+listWithPaths = sys.argv[1]
 
 def getAllFiles(path): 
     listWithFiles = {} 
@@ -39,6 +39,8 @@ def writeintofile (listWithDublicates):
     f= open( "results.txt", "a",  encoding="utf-8")
     for file, list in listWithDublicates.items(): 
             f.write(file)
+            f.write(",")
+            f.write(str(len(list)))
             for path in list:
                 f.write(",")
                 f.write(path)
